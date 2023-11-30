@@ -6,11 +6,18 @@ function RootLayouts() {
   const [isActive, setIsActive] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
+  
+
   const handleScroll = () => {
-    const currentScrollPos = window.scrollY;
-    const isVisible = prevScrollPos > currentScrollPos;
-    setPrevScrollPos(currentScrollPos);
-    setVisible(isVisible);
+    // const currentScrollPos = window.scrollY;
+    // const isVisible = prevScrollPos > currentScrollPos;
+    // setPrevScrollPos(currentScrollPos);
+    // setVisible(isVisible);
+    if (window.scrollY == 200 || window.scrollY > 200) {
+      setVisible(!true)
+    } else if (window.scrollY == 0) {
+      setVisible(true)
+    }
   };
 
   const handleClick = () => {
@@ -31,9 +38,7 @@ function RootLayouts() {
         <div className="logo">
           <NavLink> Isfandiar Adi </NavLink>
         </div>
-        <div className="lightMode">
-          <NavLink>O</NavLink>
-        </div>
+        
         <div className={`list-link ${isActive ? "active" : ""}`}>
           <NavLink to={"/profile"} hrefLang="#profile">
             Profile
@@ -42,14 +47,14 @@ function RootLayouts() {
           <NavLink to={`/projects`}>Projects</NavLink>
           <NavLink to={`/contacts`}>Contacts</NavLink>
         </div>
-        <NavLink id="hamburger-menu">
+        
+        
+      </nav>
           <Icon.Menu
             color="green"
-            className={`menu-icon ${isActive ? "active" : ""}`}
+            className={`menu-icon ${isActive ? "active" : ""}  ${window.scrollY == 200 || window.scrollY > 200 ? 'scroll' : ''}`}
             onClick={handleClick}
           />
-        </NavLink>
-      </nav>
 
       <Outlet />
     </>

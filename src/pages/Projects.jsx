@@ -29,6 +29,21 @@ const contents = [
     src: "/img-pj/table-pricing.png",
     language: "html, css",
   },
+  {
+    id: 4,
+    head: "Create Table",
+    title: "lorem ipsum bang udah bang",
+    src: "/img-pj/table-pricing.png",
+    language: "html, css",
+  },
+  {
+    id: 5,
+    head: "Create Table",
+    title: "lorem ipsum bang udah bang",
+    src: "/img-pj/table-pricing.png",
+    language: "html, css",
+  },
+  
 ];
 
 function Projects() {

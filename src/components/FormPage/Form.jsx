@@ -37,7 +37,7 @@ export default function Form() {
         <div className="form-controls">
           <label
             htmlFor=""
-            className="after:content-['(Optional)'] after:ms-2 text-xl after:text-sm block text-start mb-2"
+            className="after:content-['(Optional)'] after:ms-2 text-xl after:text-sm block text-start mb-2 text-black placeholder-black-300 "
           >
             Your Message {emailData} {nameData}
           </label>
@@ -46,7 +46,7 @@ export default function Form() {
             id=""
             cols="85"
             rows="2"
-            className="bg-transparent text-white px-2 py-1 border w-full"
+            className="bg-white text-black px-2 py-1 border w-full"
           ></textarea>
         </div>
         <button className={classbtn}>Kirim</button>

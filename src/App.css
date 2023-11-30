@@ -4,24 +4,20 @@ nav {
   left: 0;
   right: 0;
   display: flex;
-  justify-content: space-between;
-  background-color: white;
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.274);
-  border-left: 0.5px solid rgba(0, 0, 0, 0.274);
-  border-right: 0.5px solid rgba(0, 0, 0, 0.274);
-  color: white;
+  justify-content: space-around;
+  font-size: 1.2rem;
+
+  color: black;
   font-weight: bold;
   padding: 1.5rem 5%;
   z-index: 99999;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  border-top-right-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
-  transition: transform 0.2s ease-in-out;
+  transition:  0.2s ease-in-out;
 }
 
 nav.active {
+  
   transform: translateY(-100px);
+  
 }
 
 nav .logo {
@@ -29,18 +25,32 @@ nav .logo {
   text-transform: uppercase;
 }
 
-.lightMode {
-  margin-left: auto;
-}
 
-.lightMode a {
-  color: white;
-}
 
 .list-link {
   margin-left: 20px;
   display: flex;
   column-gap: 50px;
+  transition:  1s ease;
+}
+
+.list-link.active {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  row-gap: 2rem;
+  height: 100vh;
+  
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition:  1s ease;
 }
 
 .list-link a {
@@ -48,7 +58,23 @@ nav .logo {
 }
 
 .menu-icon {
+  filter: opacity(0);
   display: none;
+  position: fixed;
+  font-size: 2rem;
+  /* background-color: aqua; */
+  width: 2rem;
+  height: 2rem;
+  top: 15px;
+  right: 50px;
+  z-index: 999999;
+  cursor: pointer;
+  transition:  0.5s;
+}
+
+.menu-icon.scroll {
+  display: block;
+  filter: opacity(100%);
 }
 
 /* Profile section */
@@ -67,7 +93,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--primary);
+ 
 }
 
 header .description {
@@ -108,7 +134,7 @@ header .photo-profile img {
 
 /* about section */
 .about {
-  background-color: var(--black);
+
   padding-bottom: 10rem;
 }
 
@@ -123,7 +149,7 @@ header .photo-profile img {
 }
 
 .about h2 {
-  color: var(--white);
+ 
   position: relative;
 }
 
@@ -203,13 +229,9 @@ header .photo-profile img {
 }
 
 /* contacts section */
-.contacts {
-  background-color: var(--black);
-}
 
-.contacts h2 {
-  color: white;
-}
+
+
 
 /* footer section */
 footer {
@@ -253,16 +275,19 @@ footer .social a {
     position: absolute;
     display: none;
     row-gap: 2rem;
-    justify-content: center;
+    
     align-items: center;
+    justify-content: center;
     background-color: whitesmoke;
-    border-bottom: 0.5px solid black;
-    margin-left: 0;
-    top: 65px;
-    left: 0;
+    flex-direction: column;
+    
+    padding-bottom: 5rem;
+    top: 0;
+    
     right: 0;
-    height: 0;
-    transition: height 1s;
+    height: 100vh;
+    width: 0;
+    transition:  1s ease;
   }
 
   .list-link a {
@@ -271,17 +296,21 @@ footer .social a {
 
   .list-link.active {
     display: flex;
-    height: 100px;
-    transition: 1s;
+    width: 500px;
+    
+    
   }
 
   .menu-icon {
     display: block;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 999999;
+
   }
 
-  .menu-icon.active {
-    transform: scale(1.2);
-  }
+  
 
   header {
     flex-direction: column-reverse;
