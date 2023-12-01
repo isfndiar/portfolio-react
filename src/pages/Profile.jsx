@@ -1,6 +1,5 @@
 import HeroSection from "../components/HeroSection";
 import photoimage from "../assets/react.svg";
-import ImageThree from "../components/Image3D";
 function Profile() {
   return (
     <>
