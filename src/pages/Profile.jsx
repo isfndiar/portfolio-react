@@ -1,5 +1,6 @@
 import HeroSection from "../components/HeroSection";
 import photoimage from "../assets/react.svg";
+import ImageThree from "../components/Image3D";
 function Profile() {
   return (
     <>
@@ -8,7 +9,7 @@ function Profile() {
           <HeroSection />
         </div>
         <div className="photo-profile">
-          <img src={photoimage} alt="" />
+          <img src="vite.svg" alt="" />
         </div>
       </header>
     </>

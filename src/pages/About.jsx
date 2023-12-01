@@ -1,5 +1,8 @@
+import { useEffect, useState } from "react";
 import Card from "../components/Card";
 function About() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const cardText = [
     {
       id: 0,
@@ -26,11 +29,38 @@ function About() {
       src: "/img/XQ2SI5M - Mahir menggunakan Text Editor buat Pemula.jpg",
     },
   ];
+
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY >= 300);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <section className="about" id="about">
-        <h2>Tentang saya</h2>
-        <div className="cards">
+      <section className={`about ease-in-out duration-500 `} id="about">
+        <h2
+          className={` ${
+            isScrolled
+              ? "opacity-100 translate-x-6"
+              : "opacity-0 -translate-x-6"
+          } ease-in-out duration-500 `}
+        >
+          Tentang saya
+        </h2>
+        <div
+          className={`cards ${
+            isScrolled
+              ? "opacity-100 translate-x-6"
+              : "opacity-0 -translate-x-6"
+          } ease-in-out duration-1000`}
+        >
           {cardText.map((item) => (
             <Card
               key={item.id}
