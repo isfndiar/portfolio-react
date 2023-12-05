@@ -2,9 +2,11 @@ import * as Icon from "react-feather";
 import { Link } from "react-router-dom";
 
 function Logo() {
+
+  const classLogo = `hover:bg-[#fffffff] hover:p-2`
   return (
     <>
-      <Link to={`https://instagram.com`} target="_blank">
+      <Link to={`https://instagram.com`} target="_blank" className={classLogo}>
         <Icon.Instagram />
       </Link>
       <Link to={`https://facebook.com`} target="_blank">

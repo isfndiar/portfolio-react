@@ -3,6 +3,7 @@ import Logo from "./Logo";
 function HeroSection() {
   return (
     <>
+    <div className="description">
       <h2>
         HELLO :D <span>MY NAME IS</span>
       </h2>
@@ -17,6 +18,7 @@ function HeroSection() {
       <div className="logo">
         <Logo />
       </div>
+    </div>
     </>
   );
 }

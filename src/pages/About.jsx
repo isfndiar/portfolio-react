@@ -44,13 +44,13 @@ function About() {
 
   return (
     <>
-      <section className={`about ease-in-out duration-500 `} id="about">
+      <section className={`about `} id="about">
         <h2
           className={` ${
             isScrolled
-              ? "opacity-100 translate-x-6"
+              ? "opacity-100"
               : "opacity-0 -translate-x-6"
-          } ease-in-out duration-500 `}
+          } ease-in-out duration-1000 delay-300 `}
         >
           Tentang saya
         </h2>

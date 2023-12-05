@@ -200,7 +200,8 @@ header .photo-profile img {
 /* Projects */
 
 .projects {
-  background-color: var(--primary);
+ padding-top: 0;
+  
 }
 
 .projects .main-projects {

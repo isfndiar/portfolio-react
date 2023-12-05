@@ -4,11 +4,9 @@ function Profile() {
   return (
     <>
       <header className="profile" id="profile">
-        <div className="description">
           <HeroSection />
-        </div>
         <div className="photo-profile">
-          <img src="vite.svg" alt="" />
+          <img src="img1.png" className="rounded-full  duration-1000 transition-opacity" alt="" />
         </div>
       </header>
     </>

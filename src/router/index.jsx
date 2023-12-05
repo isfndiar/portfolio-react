@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import RootLayouts from "../layouts";
+import RootLayouts from "../components/Navbar";
 import Profile from "../pages/Profile";
 import About from "../pages/About";
 import Home from "../pages/Home";
@@ -16,9 +16,13 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/FormtoPage",
-        element: <Form />,
+        path: "/profile",
+        
       },
     ],
+  },
+  {
+    path: "/FormtoPage",
+    element: <Form />,
   },
 ]);

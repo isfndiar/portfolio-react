@@ -3,12 +3,15 @@ import InputText from "../InputText";
 export default function Form() {
   const [emailData, setEmailData] = useState("");
   const [nameData, setNameData] = useState("");
-  const handleChange = (e) => {
-    console.log(e.target.elements);
-  };
+ 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(nameData);
+  
+   setNameData(e.target.elements[0].value)
+   setEmailData(e.target.elements[1].value)
+
+   const postData = async () => {
+    fetch()
+   }
   };
   const classbtn = `text-black px-6 py-2 bg-green-300 mt-2 rounded-xl hover:bg-green-200`;
 
@@ -19,20 +22,21 @@ export default function Form() {
         method="get"
         onSubmit={handleSubmit}
         target="_blank"
+        className="border-2 border-stone-900 p-3 rounded-3xl shadow-xl"
       >
         <InputText
           placeholder="Your Name"
           forId="name"
           type="name"
           name="name"
-          isChange={(e) => setNameData(e.target.value)}
+          
         />
         <InputText
           placeholder="yourExample@gmail.com"
           forId="email"
           type="email"
           name="email"
-          isChange={(e) => setEmailData(e.target.value)}
+         
         />
         <div className="form-controls">
           <label
