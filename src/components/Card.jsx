@@ -1,7 +1,7 @@
 function Card(props) {
   return (
     <>
-      <div className="card">
+      <div className={`card ${props.cardSection}`}>
         <div className="image">
           <img src={props.src} alt="" />
         </div>

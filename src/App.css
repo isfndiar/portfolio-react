@@ -28,6 +28,11 @@ nav .logo {
   display: flex;
   column-gap: 50px;
   transition: 1s ease;
+  border: 1px solid rgb(126, 122, 122);
+  backdrop-filter: blur(39px);
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.658);
 }
 
 .list-link.active {
@@ -58,7 +63,6 @@ nav .logo {
   display: none;
   position: fixed;
   font-size: 2rem;
-  /* background-color: aqua; */
   width: 2rem;
   height: 2rem;
   top: 15px;

@@ -16,12 +16,15 @@ function RootLayouts() {
     if (window.scrollY == 200 || window.scrollY > 200) {
       setVisible(!true)
     } else if (window.scrollY == 0) {
+      setIsActive(false)
       setVisible(true)
     }
   };
 
   const handleClick = () => {
     setIsActive(!isActive);
+    console.log(isActive);
+    console.log(visible);
   };
 
   useEffect(() => {
@@ -34,7 +37,7 @@ function RootLayouts() {
 
   return (
     <>
-      <nav className={visible ? "" : "active"}>
+      <nav className={visible ? "" : isActive ? "click" : 'active'}>
         <div className="logo">
           <NavLink> Isfandiar Adi </NavLink>
         </div>
@@ -51,7 +54,7 @@ function RootLayouts() {
         
       </nav>
           <Icon.Menu
-            color="green"
+            color="black"
             className={`menu-icon ${isActive ? "active" : ""}  ${window.scrollY == 200 || window.scrollY > 200 ? 'scroll' : ''}`}
             onClick={handleClick}
           />
