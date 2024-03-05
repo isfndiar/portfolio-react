@@ -3,7 +3,7 @@ function Contacts() {
   return (
     <>
       <section className="contacts">
-        <h2>Contacts</h2>
+        <h2 id="contacts">Contacts</h2>
         <div className="container flex justify-around">
           <div className="row text-black w-6/12  self-center">
             <h2 className="text-black">Thanks for coming :D </h2>
