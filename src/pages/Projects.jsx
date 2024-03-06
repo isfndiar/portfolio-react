@@ -24,7 +24,7 @@ function Projects() {
         } ease-in-out duration-1000 delay-300 `}
       >
         <h2 id="projects">Projects</h2>
-        <div className="main-projects">
+        <div className="flex flex-wrap gap-10 justify-center">
           {dataProject.map((item) => (
             <Card2
               key={item.id}
@@ -32,6 +32,7 @@ function Projects() {
               title={item.title}
               src={item.src}
               language={item.language}
+              show={item.show}
             />
           ))}
         </div>

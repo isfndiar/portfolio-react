@@ -204,15 +204,9 @@ header .photo-profile img {
 /* Projects */
 
 .projects {
- padding-top: 0;
-  
+  padding-top: 0;
 }
 
-.projects .main-projects {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 .projects .container {
   border: 1px solid black;
 
@@ -317,10 +311,5 @@ footer .social a {
     content: "";
 
     transform: translateX(-175px);
-  }
-
-  /* projects section */
-  .projects .main-projects {
-    justify-content: center;
   }
 }
