@@ -33,56 +33,10 @@
 
 /* Profile section */
 
-header,
 .about,
 .projects,
 .contacts {
   padding: 3rem 7%;
-}
-
-header {
-  font-family: "Montserrat", sans-serif;
-  padding-top: 2rem;
-  height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-header .description {
-  width: 40%;
-}
-
-header .description h2 {
-  font-size: 2rem;
-}
-
-header .description p {
-  line-height: 2;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-header .description .logo {
-  display: flex;
-  column-gap: 1.5rem;
-}
-
-header .description .logo a {
-  color: black;
-}
-
-header .description .logo a:hover {
-  color: blue;
-  font-weight: bold;
-}
-
-header .photo-profile {
-  width: 40%;
-}
-
-header .photo-profile img {
-  width: 100%;
 }
 
 /* about section */

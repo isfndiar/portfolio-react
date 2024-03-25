@@ -19,7 +19,7 @@
 
 body {
   position: relative;
-  /* background-color: black; */
+  background-color: var(--primary);
 }
 
 .hamburger-line {
@@ -44,4 +44,12 @@ body {
 
 .menu-icon-tailwind.active {
   @apply block z-[9999];
+}
+
+.logo--icon {
+  @apply text-black;
+}
+
+.logo--icon:hover {
+  @apply text-blue-400 font-bold;
 }

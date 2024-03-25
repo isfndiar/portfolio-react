@@ -20,33 +20,31 @@ function About() {
   }, []);
 
   return (
-    <>
-      <section className={`about `} id="about">
-        <h2
-          data-aos={"fade-right"}
-          data-aos-duration="1000"
-          data-aos-offset="300"
-        >
-          About Me
-        </h2>
+    <section className={`about overflow-x-hidden`} id="about">
+      <h2
+        data-aos={"fade-right"}
+        data-aos-duration="1000"
+        data-aos-offset="300"
+      >
+        About Me
+      </h2>
 
-        <div
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-offset="300"
-          className={`cards`}
-        >
-          {dataAbout.map((item) => (
-            <Card
-              key={item.id}
-              head={item.head}
-              src={item.src}
-              text={item.text}
-            />
-          ))}
-        </div>
-      </section>
-    </>
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-offset="300"
+        className={`flex justify-between flex-wrap gap-[20px]`}
+      >
+        {dataAbout.map((item) => (
+          <Card
+            key={item.id}
+            head={item.head}
+            src={item.src}
+            text={item.text}
+          />
+        ))}
+      </div>
+    </section>
   );
 }
 

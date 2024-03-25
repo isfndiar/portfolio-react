@@ -4,6 +4,9 @@ export default {
   darkMode: "selector",
   theme: {
     extend: {},
+    fontFamily: {
+      montserrat: ["Montserrat", "sans-serif"],
+    },
+    plugins: [],
   },
-  plugins: [],
 };

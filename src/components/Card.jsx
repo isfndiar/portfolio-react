@@ -1,12 +1,12 @@
-function Card(props) {
+function Card({ src, head, text }) {
   return (
     <>
-      <div className={`card ${props.cardSection}`}>
+      <div className={`card `}>
         <div className="image">
-          <img src={props.src} alt="" />
+          <img src={src} alt="" />
         </div>
-        <h3>{props.head}</h3>
-        <p className="description">{props.text}</p>
+        <h3>{head}</h3>
+        <p className="text-sm font-medium">{text}</p>
       </div>
     </>
   );

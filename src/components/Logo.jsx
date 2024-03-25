@@ -2,27 +2,30 @@ import * as Icon from "react-feather";
 import { Link } from "react-router-dom";
 
 function Logo() {
-
-  const classLogo = `hover:bg-[#fffffff] hover:p-2`
   return (
     <>
-      <Link to={`https://instagram.com`} target="_blank" className={classLogo}>
+      <Badge to={`https://instagram.com`}>
         <Icon.Instagram />
-      </Link>
-      <Link to={`https://facebook.com`} target="_blank">
+      </Badge>
+      <Badge to={`https://facebook.com`}>
         <Icon.Facebook />
-      </Link>
-      <Link to={`https://github.com/isfndiar`} target="_blank">
+      </Badge>
+      <Badge to={`https://github.com/isfndiar`}>
         <Icon.GitHub />
-      </Link>
-      <Link
-        to={`https://www.linkedin.com/in/isfandiar-adi-048796253/`}
-        target="_blank"
-      >
+      </Badge>
+      <Badge to={`https://www.linkedin.com/in/isfandiar-adi-048796253/`}>
         <Icon.Linkedin />
-      </Link>
+      </Badge>
     </>
   );
 }
+
+const Badge = ({ children, to }) => {
+  return (
+    <Link className={"logo--icon"} to={to} target="_blank">
+      {children}
+    </Link>
+  );
+};
 
 export default Logo;
