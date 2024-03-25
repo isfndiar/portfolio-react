@@ -19,10 +19,29 @@
 
 body {
   position: relative;
-  background-color: var(--primary);
+  /* background-color: black; */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.hamburger-line {
+  @apply w-[30px] h-[2px] my-2 block bg-black;
+}
+
+.list-link-tailwind {
+  @apply w-0 h-full absolute hidden gap-8 justify-center items-center bg-[whitesmoke] flex-col pb-[5rem] top-0 right-0 transition-all duration-300 md:static md:w-[initial] md:h-[initial]  md:ml-[20px] md:flex md:flex-row md:items-stretch md:gap-[50px] md:border md:border-[rgb(126,122,122)] md:backdrop-filter md:py-[10px] md:px-[30px] md:rounded-[20px] md:bg-[rgba(255,255,255,0.658)];
+}
+
+.list-link-tailwind.active {
+  @apply flex  w-full;
+}
+
+.menu-icon-tailwind {
+  @apply hidden fixed  top-[15px] right-[50px] z-[9999999] cursor-pointer transition-all;
+}
+
+.menu-icon-tailwind.scroll {
+  @apply block z-[999999];
+}
+
+.menu-icon-tailwind.active {
+  @apply block z-[9999];
 }

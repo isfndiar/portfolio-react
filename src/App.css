@@ -1,28 +1,3 @@
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.2rem;
-
-  color: black;
-  font-weight: bold;
-  padding: 1.5rem 5%;
-  z-index: 99999;
-  transition: 0.2s ease-in-out;
-}
-
-nav.active {
-  transform: translateY(-100px);
-}
-
-nav .logo {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-
 .list-link {
   margin-left: 20px;
   display: flex;
@@ -35,31 +10,11 @@ nav .logo {
   background-color: rgba(255, 255, 255, 0.658);
 }
 
-.list-link.active {
-  position: fixed;
-  display: flex;
-  width: 100%;
-  row-gap: 2rem;
-  height: 100vh;
-
-  align-items: center;
-  justify-content: center;
-  background-color: whitesmoke;
-  flex-direction: column;
-  padding-bottom: 5rem;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transition: 1s ease;
-}
-
 .list-link a {
   color: black;
 }
 
 .menu-icon {
-  filter: opacity(0);
   display: none;
   position: fixed;
   font-size: 2rem;
@@ -74,7 +29,6 @@ nav .logo {
 
 .menu-icon.scroll {
   display: block;
-  filter: opacity(100%);
 }
 
 /* Profile section */
@@ -83,7 +37,7 @@ header,
 .about,
 .projects,
 .contacts {
-  padding: 5rem 7%;
+  padding: 3rem 7%;
 }
 
 header {
@@ -257,21 +211,18 @@ footer .social a {
   }
 
   .list-link {
-    position: absolute;
-    display: none;
-    row-gap: 2rem;
-
-    align-items: center;
-    justify-content: center;
-    background-color: whitesmoke;
-    flex-direction: column;
-
-    padding-bottom: 5rem;
-    top: 0;
-
-    right: 0;
     height: 100vh;
     width: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    padding-bottom: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    background-color: whitesmoke;
     transition: 1s ease;
   }
 

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Card from "../components/Card";
 import { dataAbout } from "../services/data.service";
+import Aos from "aos";
+import "aos/dist/aos.css";
 function About() {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -10,9 +12,10 @@ function About() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
+    Aos.init();
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      Aos.refresh();
     };
   }, []);
 
@@ -20,18 +23,18 @@ function About() {
     <>
       <section className={`about `} id="about">
         <h2
-          className={` ${
-            isScrolled ? "opacity-100" : "opacity-0 -translate-x-6"
-          } ease-in-out duration-1000 delay-300 `}
+          data-aos={"fade-right"}
+          data-aos-duration="1000"
+          data-aos-offset="300"
         >
           About Me
         </h2>
+
         <div
-          className={`cards ${
-            isScrolled
-              ? "opacity-100 translate-x-6"
-              : "opacity-0 -translate-x-6"
-          } ease-in-out duration-1000`}
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-offset="300"
+          className={`cards`}
         >
           {dataAbout.map((item) => (
             <Card

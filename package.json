@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "feather-icons": "^4.29.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",

@@ -1,15 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
-import RootLayouts from "../components/Navbar";
+import Navbar from "../layouts/Navbar";
 import Profile from "../pages/Profile";
 import About from "../pages/About";
 import Home from "../pages/Home";
 import Contacts from "../pages/Contacts";
 import Projects from "../pages/Projects";
-import Form from "../pages/FormtoPage";
+import Form from "../components/FormPage/Form";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <RootLayouts />,
+    element: <Navbar />,
     children: [
       {
         path: "/",
@@ -17,23 +17,19 @@ export const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <Profile />
-        
+        element: <Profile />,
       },
       {
         path: "/about",
-        element: <About />
-        
+        element: <About />,
       },
       {
         path: "/projects",
-        element: <Projects />
-        
+        element: <Projects />,
       },
       {
         path: "/contacts",
-        element: <Contacts />
-        
+        element: <Contacts />,
       },
     ],
   },

@@ -1,31 +1,26 @@
 import Card2 from "../components/ImageText";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { dataProject } from "../services/data.service";
+import Aos from "aos";
+import "aos/dist/aos.css";
 function Projects() {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  const handleScroll = () => {
-    setIsScrolled(window.scrollY >= 1200);
-  };
-
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
+    Aos.init();
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      Aos.refresh();
     };
   }, []);
 
   return (
     <>
       <section
-        className={` projects ${
-          isScrolled ? "opacity-100 " : "opacity-0 -translate-x-6"
-        } ease-in-out duration-1000 delay-300 `}
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        className={` projects `}
       >
         <h2 id="projects">Projects</h2>
         <div className="flex flex-wrap gap-10 justify-center">
-          {dataProject.map((item) => (
+          {dataProject.map((item, i) => (
             <Card2
               key={item.id}
               head={item.head}
