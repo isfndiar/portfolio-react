@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 function Logo() {
   return (
     <>
-      <Badge to={`https://instagram.com`}>
+      <Badge to={`https://www.instagram.com/diaarrrrr/`}>
         <Icon.Instagram />
       </Badge>
       <Badge to={`https://facebook.com`}>
-        <Icon.Facebook />
+        <Icon.Mail to={`isfandiaradi21@gmail.com`} />
       </Badge>
       <Badge to={`https://github.com/isfndiar`}>
         <Icon.GitHub />

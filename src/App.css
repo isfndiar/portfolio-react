@@ -15,16 +15,7 @@
 }
 
 .menu-icon {
-  display: none;
-  position: fixed;
-  font-size: 2rem;
-  width: 2rem;
-  height: 2rem;
-  top: 15px;
-  right: 50px;
-  z-index: 999999;
-  cursor: pointer;
-  transition: 0.5s;
+  @apply hidden fixed text-[2rem] w-[2rem] h-[2rem] top-[15px] right-[50px] z-[999999] cursor-pointer transition-[0.5s];
 }
 
 .menu-icon.scroll {
@@ -33,40 +24,14 @@
 
 /* Profile section */
 
-.about,
 .projects,
 .contacts {
   padding: 3rem 7%;
 }
 
-/* about section */
-.about {
-  padding-bottom: 10rem;
-}
-
-.about h2,
 .projects h2,
 .contacts h2 {
-  /* text-align: center; */
-  font-size: 2rem;
-  padding: 1rem;
-  text-align: center;
-  margin-bottom: 5rem;
-}
-
-.about h2 {
-  position: relative;
-}
-
-.about h2::after {
-  content: "";
-  position: absolute;
-  width: 14rem;
-  height: 1px;
-  background-color: white;
-  bottom: 10px;
-
-  transform: translateX(-225px);
+  @apply text-[2rem] p-4 text-center mb-20;
 }
 
 .cards {
@@ -74,35 +39,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 20px;
-}
-
-.card {
-  width: 260px;
-  /* height: 300px; */
-  padding: 1rem;
-  border: 0.5px solid black;
-  border-radius: 20px;
-  background-color: rgb(247, 242, 242);
-  transition: 0.5s ease;
-}
-
-.card:hover {
-  transform: translateY(-20px);
-}
-
-.card .image {
-  height: 10rem;
-  display: flex;
-  align-items: center;
-  border: black 1px solid;
-  overflow: hidden;
-}
-
-.card .image img {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  transition: 0.5s ease;
 }
 
 .card h3 {
@@ -160,10 +96,6 @@ footer .social a {
 }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 80%;
-  }
-
   .list-link {
     height: 100vh;
     width: 0;
@@ -197,20 +129,7 @@ footer .social a {
     z-index: 999999;
   }
 
-  header {
-    flex-direction: column-reverse;
-    row-gap: 20px;
-  }
-
-  header .description {
-    width: 100%;
-  }
-
   /* about section */
-
-  .cards {
-    justify-content: center;
-  }
 
   .about h2::after {
     content: "";

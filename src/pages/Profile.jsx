@@ -8,12 +8,18 @@ function Profile() {
   }, []);
   return (
     <header
-      className="py-[3rem] px-[7%] font-montserrat pt-[2rem]  h-screen flex justify-around items-center"
+      className="w-full mt-20 md:mt-24  px-[7] font-montserrat  flex flex-col md:flex-row justify-around items-center"
       id="profile"
     >
       <HeroSection />
-      <div className="w-full max-w-sm">
-        <User className="rounded-full bg-gray-100 w-full max-w-[400px] h-full" />
+      <div className="w-full flex justify-center max-w-sm">
+        <div className="w-72 h-72 rounded-full overflow-hidden">
+          <img
+            className="w-full md:inline-block hidden max-w-[300px] mx-auto -translate-y-20   rounded-full"
+            src="/img/firefly.png"
+            alt="owner-website"
+          />
+        </div>
       </div>
     </header>
   );
