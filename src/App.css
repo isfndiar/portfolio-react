@@ -97,19 +97,7 @@ footer .social a {
 
 @media (max-width: 768px) {
   .list-link {
-    height: 100vh;
-    width: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
     display: none;
-    padding-bottom: 5rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 2rem;
-    background-color: whitesmoke;
-    transition: 1s ease;
   }
 
   .list-link a {
@@ -119,14 +107,6 @@ footer .social a {
   .list-link.active {
     display: flex;
     width: 500px;
-  }
-
-  .menu-icon {
-    display: block;
-    position: fixed;
-    top: 15px;
-    right: 20px;
-    z-index: 999999;
   }
 
   /* about section */

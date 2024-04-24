@@ -55,7 +55,7 @@ function Navbar() {
         {isActive ? (
           <Navigation
             isScroll={
-              "fixed flex w-full max-w-[50%] h-full flex-col gap-[2rem] items-center justify-center bg-[whitesmoke] pb-20 top-0  right-0 bottom-0 transition-all  border ease-in-out duration-300"
+              "w-full max-w-[200px]  fixed top-11  right-6 flex flex-col items-center justify-center border bg-[whitesmoke]    transition-all ease-in-out duration-300"
             }
           />
         ) : null}
@@ -63,9 +63,9 @@ function Navbar() {
 
       <Icon.Menu
         color="black"
-        className={`menu-icon ${isActive ? "active" : ""}  ${
-          window.scrollY == 200 || window.scrollY > 200 ? "scroll" : ""
-        }`}
+        className={`block fixed top-5 right-5 z-[99999] ${
+          isActive ? "active" : ""
+        }  ${window.scrollY == 200 || window.scrollY > 200 ? "scroll" : ""}`}
         onClick={handleClick}
       />
 
@@ -76,13 +76,29 @@ function Navbar() {
 
 const Navigation = ({ isActive, isClick, isScroll }) => {
   return (
-    <div className={`${isScroll} `}>
-      <a href={"#profile"} hrefLang="#profile">
+    <div className={`${isScroll} group `}>
+      <a
+        className="hover:bg-green-300 w-full text-center py-2"
+        href={"#profile"}
+        hrefLang="#profile"
+      >
         Profile
       </a>
-      <a href={`#about`}>About</a>
-      <a href={`#projects`}>Projects</a>
-      <a href={`#contacts`}>Contacts</a>
+      <a className="hover:bg-green-300 w-full text-center py-2" href={`#about`}>
+        About
+      </a>
+      <a
+        className="hover:bg-green-300 w-full text-center py-2"
+        href={`#projects`}
+      >
+        Projects
+      </a>
+      <a
+        className="hover:bg-green-300 w-full text-center py-2"
+        href={`#contacts`}
+      >
+        Contacts
+      </a>
     </div>
   );
 };
