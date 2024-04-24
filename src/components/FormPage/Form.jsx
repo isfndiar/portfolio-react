@@ -6,7 +6,7 @@ export default function Form() {
   return (
     <>
       <form
-        action="/FormtoPage"
+        action={`${import.meta.env.VITE_MAIL_URL}`}
         method="get"
         target="_blank"
         className="border-2 border-stone-900 p-3 rounded-3xl shadow-xl"

@@ -13,9 +13,9 @@ function Profile() {
     >
       <HeroSection />
       <div className="w-full flex justify-center max-w-sm">
-        <div className="w-72 h-72 rounded-full overflow-hidden">
+        <div className="w-72 h-72 md:inline-block hidden rounded-full overflow-hidden">
           <img
-            className="w-full md:inline-block hidden max-w-[300px] mx-auto -translate-y-20   rounded-full"
+            className="w-full max-w-[300px] mx-auto -translate-y-20   rounded-full"
             src="/img/firefly.png"
             alt="owner-website"
           />

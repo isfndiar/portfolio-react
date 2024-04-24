@@ -20,7 +20,7 @@ function About() {
   }, []);
 
   return (
-    <section className={` pb-40 px-7 overflow-x-hidden`} id="about">
+    <section className={`mt-10 pb-40 px-7 overflow-x-hidden`} id="about">
       <h2
         data-aos={"fade-right"}
         data-aos-duration="1000"
@@ -33,7 +33,7 @@ function About() {
         data-aos="fade-left"
         data-aos-duration="1000"
         data-aos-offset="300"
-        className={`flex justify-center gap-10 flex-wrap py-10`}
+        className={`flex justify-center gap-10 flex-wrap py-5`}
       >
         {dataAbout.map((item) => (
           <Card
