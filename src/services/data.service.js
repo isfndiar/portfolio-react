@@ -1,21 +1,17 @@
 export const dataAbout = [
   {
     id: 0,
+    year: "2022 - now",
     head: "Codepolitan",
-    text: "Kursus ini memberikan saya pengalaman dan pembelajaran yang baik sebagai fullstack developer.",
+    text: "studied at codepolitan. provide good experience and learning in fullstack developer",
     src: "/img/codepolitan-logo.png",
   },
   {
     id: 1,
+    year: "2020 - now",
     head: "Freecodecamp",
-    text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,minus voluptatem quaerat assumenda totam natus beatae quod eveniet? Esse, quos?",
+    text: "studied at Freecodecamp. provide good experience and learning in terms of programming logic and algorithms",
     src: "/img/fcp.png",
-  },
-  {
-    id: 2,
-    head: "Mengenal Pemrograman Komputer",
-    text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,minus voluptatem quaerat assumenda totam natus beatae quod eveniet? Esse, quos?",
-    src: "/img/6SMW2KK - Mengenal Pemrograman Komputer.jpg",
   },
 ];
 
@@ -71,5 +67,43 @@ export const dataProject = [
     title: "lorem ipsum bang udah bang",
     src: "/img-pj/table-pricing.png",
     language: "html, css",
+  },
+];
+
+export const dataTech = [
+  {
+    id: 1,
+    src: "/tech/js.png",
+    name: "JavaScript",
+  },
+  {
+    id: 2,
+    src: "/tech/nodejs.png",
+    name: "NodeJS",
+  },
+  {
+    id: 3,
+    src: "/tech/react.png",
+    name: "ReactJS",
+  },
+  {
+    id: 4,
+    src: "/tech/express.png",
+    name: "ExpressJS",
+  },
+  {
+    id: 5,
+    src: "/tech/next.png",
+    name: "NextJS",
+  },
+  {
+    id: 6,
+    src: "/tech/tailwind.png",
+    name: "TailwindCSS",
+  },
+  {
+    id: 7,
+    src: "/tech/python.png",
+    name: "Python",
   },
 ];

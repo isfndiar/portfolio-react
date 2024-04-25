@@ -1,8 +1,8 @@
-import Card2 from "../components/ImageText";
 import { useEffect } from "react";
 import { dataProject } from "../services/data.service";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import CardProject from "../components/CardProject";
 function Projects() {
   useEffect(() => {
     Aos.init();
@@ -21,7 +21,7 @@ function Projects() {
         <h2 id="projects">Projects</h2>
         <div className="flex flex-wrap gap-10 justify-center">
           {dataProject.map((item, i) => (
-            <Card2
+            <CardProject
               key={item.id}
               head={item.head}
               title={item.title}

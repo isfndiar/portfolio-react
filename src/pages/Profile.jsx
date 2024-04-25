@@ -1,7 +1,8 @@
 import { User } from "react-feather";
 import Aos from "aos";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Logo from "../components/Logo";
+import { dataTech } from "../services/data.service";
 function Profile() {
   useEffect(() => {
     Aos.init();
@@ -26,6 +27,13 @@ function Profile() {
 }
 
 const HeroSection = () => {
+  const [visible, setVisible] = useState(false);
+  const handleHover = (e) => {
+    setVisible(true);
+  };
+  const handleMouseLeave = (e) => {
+    setVisible(false);
+  };
   return (
     <div className=" w-full max-w-sm  ">
       <div className="mt-10 px-3">
@@ -37,11 +45,28 @@ const HeroSection = () => {
           and responsive web applications. I believe in the power of continuous
           learning and improvement. My journey in the world of web development
           has just begun, and I am excited to explore new technologies, tackle
-          challenges, and grow as a developer. Let's connect and learn together!
+          challenges, and grow as a developer. {`Let's`} connect and learn
+          together!
         </p>
       </div>
       <div className="flex gap-3 justify-center md:justify-start">
         <Logo />
+      </div>
+      <div className="mt-3">
+        <h1 className="font-bold">currently used technology</h1>
+
+        <div className="flex w-full relative">
+          {dataTech.map((item) => (
+            <div key={item?.id} className="group">
+              <img className="w-10" src={item?.src} alt={`${item}`} />
+              <div
+                className={`group-hover:opacity-100 opacity-0  bg-black text-white text-center py-2 px-3 rounded-[6px] absolute -top-10 -translate-x-4 z-10 after:content-[''] after:absolute after:top-full after:left-1/2 after:border-t-8 after:border-black after:ml-[-5px] transition-opacity   delay-500 `}
+              >
+                {`${item?.name}`}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

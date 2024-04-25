@@ -33,7 +33,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className={` fixed w-full top-0 right-0 left-0 flex justify-between md:justify-around text-black font-bold py-[1.5rem] px-[5%] z-[9999]  transition-all duration-300`}
+        className={`fixed w-full top-0 right-0 left-0 flex justify-between md:justify-around text-black font-bold py-[1.5rem] px-[5%] z-[9999]  transition-all duration-300`}
       >
         <div
           className={`${
@@ -56,7 +56,7 @@ function Navbar() {
         <Navigation
           className={`${
             visible ? "" : isActive ? "" : "translate-y-[-100px]"
-          } hidden md:flex ml-[20px]  gap-[50px]  border border-[rgb(126,122,122)] backdrop:blur-[39px] bg-[rgba(255,255,255,0.658)] px-[30px] py-[10px] rounded-[20px] cursor-pointer transition-all  duration-300 `}
+          } hidden md:flex ml-[20px]  gap-[50px]  border border-[rgb(126,122,122)] backdrop:blur-[39px] bg-[rgba(255,255,255,0.658)] px-[30px] py-[10px] rounded-[20px] cursor-pointer transition-all  duration-300 backdrop--filter `}
         />
         {isActive ? <NavPhoneRes isActive={isActive} /> : null}
       </nav>

@@ -1,26 +1,26 @@
 import { Link } from "react-router-dom";
 
-function Card2(props) {
+function CardProject({ show, src, head, title, language }) {
   return (
     <>
       <div className="w-[300px]  border border-black rounded-xl overflow-hidden bg-white p-1 pb-10 ">
         <div className="overflow-hidden rounded-xl">
-          <Link to={props.show}>
+          <Link to={show}>
             <img
-              src={props.src}
+              src={src}
               alt="Project-Photo "
               className="border-1 border-black w-full h-[170px] object-contain hover:scale-125 transition-all duration-300"
             />
           </Link>
         </div>
         <div className="mt-2 px-2">
-          <b className="">{props.head}</b>
-          <p className="mt-2">{props.title}</p>
-          <p>Technology : {props.language} </p>
+          <b className="">{head}</b>
+          <p className="mt-2">{title}</p>
+          <p>Tech : {language} </p>
         </div>
       </div>
     </>
   );
 }
 
-export default Card2;
+export default CardProject;

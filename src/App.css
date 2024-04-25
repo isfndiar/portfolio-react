@@ -48,26 +48,6 @@
   flex-direction: column;
 }
 
-/* contacts section */
-
-/* footer section */
-footer {
-  background-color: var(--primary);
-  padding: 2rem 0;
-  text-align: center;
-}
-
-footer .social {
-  display: flex;
-  justify-content: center;
-  column-gap: 20px;
-  margin-bottom: 1rem;
-}
-
-footer .social a {
-  color: black;
-}
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -84,10 +64,6 @@ footer .social a {
 }
 
 @media (max-width: 768px) {
-  .list-link {
-    display: none;
-  }
-
   .menu-icon {
     display: block;
   }

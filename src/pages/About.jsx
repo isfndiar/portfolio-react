@@ -41,6 +41,7 @@ function About() {
             head={item.head}
             src={item.src}
             text={item.text}
+            year={item?.year}
           />
         ))}
       </div>

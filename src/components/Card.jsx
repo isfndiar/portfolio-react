@@ -1,4 +1,4 @@
-function Card({ src, head, text }) {
+function Card({ src, head, text, year }) {
   return (
     <div
       className={`w-full max-w-[300px]  p-4 border-[1px] border-black rounded-xl bg-white  hover:-translate-y-[20px] transition-all duration-300`}
@@ -11,7 +11,9 @@ function Card({ src, head, text }) {
         />
       </div>
       <div className="">
-        <h3 className="mt-3">{head}</h3>
+        <h3 className="mt-3">
+          {head} {year}
+        </h3>
         <p className="text-sm font-light ">{text}</p>
       </div>
     </div>
