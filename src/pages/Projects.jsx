@@ -18,7 +18,9 @@ function Projects() {
         data-aos-duration="1000"
         className={` projects `}
       >
-        <h2 id="projects">Projects</h2>
+        <h2 className="text-[2rem] p-4 text-center mb-20 " id="projects">
+          Projects
+        </h2>
         <div className="flex flex-wrap gap-10 justify-center">
           {dataProject.map((item, i) => (
             <CardProject

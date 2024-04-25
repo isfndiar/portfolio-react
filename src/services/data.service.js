@@ -31,7 +31,7 @@ export const dataProject = [
     title: "Create Burger App",
     src: "/burgerApp.jpg",
     language: "React js",
-    show: "https://burger-app-sigma.vercel.app/",
+    show: "https://burrgerapp.vercel.app/",
     category: "web2",
   },
   {
@@ -45,7 +45,7 @@ export const dataProject = [
   },
   {
     id: 3,
-    head: "Niaba boster",
+    head: "DiarHoster",
     title: "Hosting, deploy web for free (Landing Page)",
     src: "/niababoster.jpg",
     language: "html, css",
@@ -60,13 +60,6 @@ export const dataProject = [
     language: "html, css,js",
     show: "https://isfndiar.github.io/portfolio/",
     category: "web2",
-  },
-  {
-    id: 5,
-    head: "Create Table",
-    title: "lorem ipsum bang udah bang",
-    src: "/img-pj/table-pricing.png",
-    language: "html, css",
   },
 ];
 
