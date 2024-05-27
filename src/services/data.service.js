@@ -13,6 +13,34 @@ export const dataAbout = [
     text: "studied at Freecodecamp. provide good experience and learning in terms of programming logic and algorithms",
     src: "/img/fcp.png",
   },
+  {
+    id: 2,
+    year: "2020 - now",
+    head: "Freecodecamp",
+    text: "studied at Freecodecamp. provide good experience and learning in terms of programming logic and algorithms",
+    src: "/img/fcp.png",
+  },
+  {
+    id: 3,
+    year: "2020 - now",
+    head: "Freecodecamp",
+    text: "studied at Freecodecamp. provide good experience and learning in terms of programming logic and algorithms",
+    src: "/img/fcp.png",
+  },
+  {
+    id: 4,
+    year: "2020 - now",
+    head: "Freecodecamp",
+    text: "studied at Freecodecamp. provide good experience and learning in terms of programming logic and algorithms",
+    src: "/img/fcp.png",
+  },
+  {
+    id: 5,
+    year: "2020 - now",
+    head: "Freecodecamp",
+    text: "studied at Freecodecamp. provide good experience and learning in terms of programming logic and algorithms",
+    src: "/img/fcp.png",
+  },
 ];
 
 export const dataProject = [
@@ -60,43 +88,5 @@ export const dataProject = [
     language: "html, css,js",
     show: "https://isfndiar.github.io/portfolio/",
     category: "web2",
-  },
-];
-
-export const dataTech = [
-  {
-    id: 1,
-    src: "/tech/js.png",
-    name: "JavaScript",
-  },
-  {
-    id: 2,
-    src: "/tech/nodejs.png",
-    name: "NodeJS",
-  },
-  {
-    id: 3,
-    src: "/tech/react.png",
-    name: "ReactJS",
-  },
-  {
-    id: 4,
-    src: "/tech/express.png",
-    name: "ExpressJS",
-  },
-  {
-    id: 5,
-    src: "/tech/next.png",
-    name: "NextJS",
-  },
-  {
-    id: 6,
-    src: "/tech/tailwind.png",
-    name: "TailwindCSS",
-  },
-  {
-    id: 7,
-    src: "/tech/python.png",
-    name: "Python",
   },
 ];
