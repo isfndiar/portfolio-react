@@ -73,7 +73,6 @@ body {
 
 /* Profile section */
 
-.projects,
 .contacts {
   padding: 3rem 7%;
 }
@@ -92,21 +91,6 @@ body {
 
 .card h3 {
   text-align: center;
-}
-
-/* Projects */
-
-.projects {
-  padding-top: 0;
-}
-
-.projects .container {
-  border: 1px solid black;
-
-  margin-bottom: 1rem;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
 }
 
 @keyframes logo-spin {

@@ -13,16 +13,23 @@ function Projects() {
 
   return (
     <>
-      <section
-        data-aos="fade-right"
-        data-aos-duration="1000"
-        className={` projects `}
-      >
-        <h2 className="text-[2rem] p-4 text-center mb-20 " id="projects">
+      <section className={` projects pt-0 py-12 px-[7%]`}>
+        <h2
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-offset="500"
+          className="text-[2rem] p-4 text-center mb-20 "
+          id="projects"
+        >
           Projects
         </h2>
-        <div className="flex flex-wrap gap-10 justify-center">
-          {dataProject.map((item, i) => (
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-offset="400"
+          className="flex flex-wrap gap-10 justify-center"
+        >
+          {dataProject.map((item) => (
             <CardProject
               key={item.id}
               head={item.head}
